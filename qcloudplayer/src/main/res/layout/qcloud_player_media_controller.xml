@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/qcloud_player_background"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingLeft="@dimen/qcloud_play_margin_length"
+        android:paddingRight="@dimen/qcloud_play_margin_length"
+        android:orientation="horizontal">
+        
+        <ImageButton android:id="@+id/qcloud_player_pause_btn"
+            style="@android:style/MediaButton.Play"
+            android:visibility="gone"
+             />
+
+        <TextView android:id="@+id/qcloud_player_time_current"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"/>
+
+        <com.qcloud.player.ui.MySeekBar
+            android:id="@+id/qcloud_player_mediacontroller_progress"
+            style="@style/SeekBarAppTheme"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="32dip" />
+
+        <TextView android:id="@+id/qcloud_player_duration"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"/>
+        
+        <ImageButton android:id="@+id/qcloud_player_full_screen_btn"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:visibility="visible"
+            android:src="@drawable/qcloud_player_icon_fullscreen_stretch"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"/>
+        
+    </LinearLayout>
+
+</LinearLayout>

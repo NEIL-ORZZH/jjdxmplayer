@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="qcloud_play_title_height">38dp</dimen>
+    <dimen name="qcloud_play_margin_length">15dp</dimen>
+</resources>
